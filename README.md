@@ -6,11 +6,11 @@ This app is powered by Artifical Intelligence. My goal for this project was to b
 
 The app is able to classify 7 types of skin lesions as described in this paper:
 
-The HAM10000 Dataset: A Large Collection of Multi-Source Dermatoscopic Images of Common Pigmented Skin Lesions
+The HAM10000 Dataset: A Large Collection of Multi-Source Dermatoscopic Images of Common Pigmented Skin Lesions<br>
 https://arxiv.org/abs/1803.10417
 
 
-The entire model building and training process is described in this Kaggle kernel:
+The entire model building and training process is described in this Kaggle kernel:<br>
 https://www.kaggle.com/vbookshelf/skin-lesion-analyzer-tensorflow-js-web-app
 
 The python code to build and train the model is included in the Jupyter notebook. All the javascript, css and html files are also freely available here. The trained model is also available.
