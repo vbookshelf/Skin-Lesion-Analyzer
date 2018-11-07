@@ -1,0 +1,410 @@
+
+
+
+
+
+.add-margin {
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+
+.add-padding {
+	
+	padding-bottom: 30px;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+
+
+input {
+	font-size: 20px;
+	font-family: Helvetica, sans-serif;
+}
+
+
+.title {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.hide {
+	display: none;
+}
+
+.new-font {
+	font-family: georgia, serif;
+	letter-spacing: .05em;
+}
+
+
+.space-letters {
+	letter-spacing: .05em;
+}
+
+
+
+.unblock {
+display: inline-block;
+}
+
+
+
+input[type="file"] {
+    opacity: 0;
+    
+}
+
+
+.dont-break-out {
+	/*These are technically the same but use both 
+	to ensure all browsers are supported*/
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+
+.new-font {
+	font-family: monospace, serif;
+	font-size: 15px;
+	
+}
+
+li {
+	font-family: monospace, serif;
+	font-size: 15px;
+	
+}
+
+
+
+.logo h1 {
+	font-size: 50px;
+	font-family: 'Oswald', sans-serif;
+	line-height: 1.1;
+}
+
+.logo1 {
+	font-family: 'Oswald', sans-serif;
+}
+
+
+.header-style {
+	height: 50px;
+	background-color: #0375b4; /*#303030;*/
+}
+
+
+.adjust-fontcolor {
+	color: black;
+}
+
+
+.normal-header {
+	display: block;
+}
+
+
+.btn-font {
+	font-size: 18px;
+	letter-spacing: .03em;
+}
+
+/*
+-------------------------
+Specifically for tablets
+-------------------------
+*/
+
+.tag-font {
+	font-size: 16px;
+	
+}
+
+.new-font {
+	font-family: monospace, serif;
+	font-size: 16px;
+}
+
+li {
+	font-family: monospace, serif;
+	font-size: 16px;
+}
+
+
+.side-margin {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.adjust-image {
+	max-width: 400px;
+	
+}
+
+.bottom-padding {
+	padding-bottom: 300px;
+}
+
+
+/*
+-----------------
+MEDIA QUERIES
+-----------------
+*/
+
+@media only screen and (min-device-width: 1200px) {
+/* Devices that are Laptops and Desktops */
+
+
+
+.btn-font {
+	font-size: 15px;
+	letter-spacing: .03em;
+}
+
+.new-font {
+	font-family: monospace, serif;
+	font-size: 15px;
+}
+
+li {
+	font-family: monospace, serif;
+	font-size: 15px;
+}
+
+.side-margin {
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+
+input {
+	font-size: 16px;
+}
+
+
+
+.logo h1 {
+	font-size: 40px;
+}
+
+.adjust-image {
+	max-width: 300px;
+	
+}
+
+
+.card {
+	box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
+	margin-top: 16px;
+	margin-bottom: 16px;
+	
+}
+
+.tag-font {
+	font-size: 12px;
+	
+}
+
+.bottom-padding {
+	padding-bottom: 300px;
+}
+
+
+}/*Close Media Query*/
+
+@media only screen and (max-width: 480px) {
+/*Cellphone Screens*/
+
+
+
+.normal-header {
+	display: none;
+}
+
+
+.logo h1 {
+	font-size: 50px;
+}
+
+.adjust-image {
+	max-width: 200px;
+	margin-bottom: 40px;
+}
+
+
+
+.header-stylehome {
+	display: none;
+}
+
+
+
+} /*Close Media Query*/
+
+
+
+
+@media only screen and (max-width: 480px) and (orientation: portrait){
+/*Cellphone Screens in portrait*/
+
+.btn-font {
+	font-size: 12px;
+	letter-spacing: .03em;
+}
+
+.add-margintop {
+	margin-top: 10%;
+}
+
+.side-margin {
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.adjust-image {
+	max-width: 90%;
+	margin-bottom: 10px;
+}
+
+.space-letters {
+	letter-spacing: .03em;
+}
+
+.logo h1 {
+	font-size: 30px;
+}
+
+.bottom-padding {
+	padding-bottom: 200px;
+}
+
+.mono-font h5 {
+	font-size: 16px;
+}
+
+.new-font {
+	font-family: monospace, serif;
+	font-size: 14px;
+	
+}
+
+li {
+	font-family: monospace, serif;
+	font-size: 12px;
+}
+
+.tag-font {
+	font-size: 10px;
+}
+
+.add-padding {
+	padding-bottom: 30px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+
+
+} /*Close Media Query*/
+
+
+
+
+@media only screen and (max-width: 480px) and (orientation: landscape){
+/*Cellphone Screens in landscape*/
+
+.btn-font {
+	font-size: 12px;
+	letter-spacing: .03em;
+}
+
+.add-margintop {
+	margin-top: 10%;
+}
+
+.side-margin {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.adjust-image {
+	max-width: 60%;
+	margin-bottom: 10px;
+}
+
+.space-letters {
+	letter-spacing: .03em;
+}
+
+.logo h1 {
+	font-size: 35px;
+}
+
+.bottom-padding {
+	padding-bottom: 150px;
+}
+
+.mono-font h5 {
+	font-size: 16px;
+}
+
+.new-font {
+	font-family: monospace, serif;
+	font-size: 11px;
+	
+}
+
+li {
+	font-family: monospace, serif;
+	font-size: 10px;
+}
+
+.add-padding {
+	padding-bottom: 30px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.tag-font {
+	font-size: 12px;
+}
+
+
+.normal-header {
+	display: none;
+}
+
+
+} /*Close Media Query*/
+
+
+@media only all and (min-width: 520px) {
+/*Tablets*/
+
+
+} /*Close Media Query*/
+
+
+@media only all and (max-width: 520px) and (orientation: landscape) {
+/*Tablets in landscape*/
+
+.new-font {
+	font-family: monospace, serif;
+	font-size: 15px;
+	
+}
+
+li {
+	font-family: monospace, serif;
+	font-size: 15px;
+}
+
+
+
+} /*Close Media Query*/
