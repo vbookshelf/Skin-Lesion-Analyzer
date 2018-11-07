@@ -1,4 +1,5 @@
 
+Live Web App: http://skin.test.woza.work/
 
 This is a prototype for a freely available online tool that can tell doctors and lab technologists the three highest probability diagnoses for a given skin lesion. It could help them quickly identify high risk patients and speed up their workflow. The app will produce a result in less than 3 seconds. To ensure privacy, user submitted images are pre-processed and analysed locally and are never uploaded to an external server. 
 
