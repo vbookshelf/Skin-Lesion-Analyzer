@@ -19,7 +19,7 @@ The python code to build and train the model is included in the Jupyter notebook
 Bugs & Lessons Learned:
 
 1. If the model is not loading into your website:<br>
-If you uploaded the model using FileZilla then the default transfer setting may need to be changed.
+If you uploaded the model using FileZilla then the default transfer setting may need to be changed.<br>
 Go to Settings->Transfers->File_Types and set the default transfer type to Binary.<br> 
 Then upload the model to the server again.
 
