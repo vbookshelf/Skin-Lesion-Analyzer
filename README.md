@@ -16,5 +16,15 @@ https://www.kaggle.com/vbookshelf/skin-lesion-analyzer-tensorflow-js-web-app
 
 The python code to build and train the model is included in the Jupyter notebook. All the javascript, css and html files are also freely available here. The trained model is also available.
 
-I don't know how accurate the app is in practice. There's no way to field test it. I'll just leave it to roam around in the wild. Maybe someone will find it helpful.
+Bugs & Lessons Learned:
+
+1. If the model is not loading into your website:<br>
+If you uploaded the model using FileZilla then the default transfer setting may need to be changed.
+Go to Settings->Transfers->File_Types and set the default transfer type to Binary.<br> 
+Then upload the model to the server again.
+
+2. When trouble shooting your website ensure that your browser is in "Incognito" mode. Otherwise it will load the model (and site) that is stored in the cahe and you will not be looking at the latest version of the model.
+
+3. Create the model in Keras and convert it to Tensorflow.js without first saving it. If you save it, load a saved model then convert - the model may not work when loaded into your site.
+
 
