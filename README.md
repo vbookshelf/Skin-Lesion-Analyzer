@@ -23,7 +23,7 @@ If you uploaded the model using FileZilla then the default transfer setting may 
 Go to Settings->Transfers->File_Types and set the default transfer type to Binary.<br> 
 Then upload the model to the server again.
 
-2. When trouble shooting your website ensure that your browser is in "Incognito" mode. Otherwise it will load the model (and site) that is stored in the cahe and you will not be looking at the latest version of the model.
+2. When trouble shooting your website ensure that your browser is in "Incognito" mode. Otherwise it will load the model (and site) that is stored in the cache and you will not be looking at the latest version of the model.
 
 3. Create the model in Keras and convert it to Tensorflow.js without first saving it. If you save it, load a saved model then convert - the model may not work when loaded into your site.
 
