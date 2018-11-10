@@ -11,6 +11,12 @@ function simulateClick(tabID) {
 	document.getElementById(tabID).click();
 }
 
+function predictOnLoad() {
+	
+	// Simulate a click on the predict button
+	setTimeout(simulateClick.bind(null,'predict-button'), 500);
+};
+
 
 $("#image-selector").change(function () {
 	let reader = new FileReader();
@@ -43,19 +49,16 @@ let model;
 	$("#selected-image").attr("src", "http://skin.test.woza.work/assets/samplepic.jpg")
 	
 	
-	// Simulate a click on the predict button
-	predictOnLoad();
+	
 	// Hide the model loading spinner
 	$('.progress-bar').hide();
 	
+	// Simulate a click on the predict button
+	predictOnLoad();
 	
 })();
 
-function predictOnLoad() {
-	
-	// Simulate a click on the predict button
-	setTimeout(simulateClick.bind(null,'predict-button'), 1000);
-};
+
 
 
 
