@@ -26,7 +26,7 @@ In order the run this project you will need to set up a web address and then upl
 
 These are the steps:
 
-1. Set up an account with an internet service provider (ISP). I use Dreamhost but there are many others you can use depending on your needs and budget.
+1. Set up an account with an internet service provider (ISP). I use <a href="https://www.dreamhost.com/r.cgi?2163352">Dreamhost</a> but there are many others you can use depending on your needs and budget.
 2. Register a domain name like mywebsite.com. There is an annual cost for this but some ISP’s will give you your first domain for free.
 3. You can upload the files to this domain or you could create a sub-domain like: skinproject.mywebsite.com. The good thing about sub-domains is that they can be set up for free, depending on your ISP. This helps if you have many personal web project ideas that you want to implement. On this project, skin.test.woza.work is actually a subdomain of woza.work.
 5. Upload the files to the web address you have created. Your ISP will have specific instructions on how to do this. For example, on Dreamhost the HTML file of the main page has to always be named index.html. These are the files and folders from this repo that you should upload to your site:<br>
