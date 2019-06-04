@@ -62,6 +62,13 @@ Then upload the model to the server again.
 
 6. The app does not work in OSX Safari. It's best to use the latest version of Chrome. When developing Tensorflowjs based apps browser support needs to be kept in mind.
 
+7. Some image datasets contain images in TIF format. Web browsers don't support TIF format. Therefore, users will need to submit images in jpg or png format. Therefore, when training the model it's important to convert the training images to jpg or png before using them for training. If you don't do this then you will find the predictions from the app will not match the predictions from the model - the app predictions will be bad.
+
+8. Always use cv2 for resizing images and when converting images from TIF to jpg or png. This seems to produce the good results when the model is running in the app. User submitted images are resized using tf.resizeNearestNeighbor because cv2 cannot be used in the browser. It appears that cv2 and tf.resizeNearestNeighbor work in similar ways.
+
+9. If images need to be normalized or require other pre-processing try to do this inside the model using a lamda layer. This means that you will not need to write separate tensorflow.js code in the app to do normalization of user submitted images.
+
+
 
 
 
