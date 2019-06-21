@@ -74,7 +74,6 @@ Then upload the model to the server again.
 
 8. Always use cv2 for resizing images and when converting images from TIF to jpg or png. This seems to produce the good results when the model is running in the app. User submitted images are resized using tf.resizeNearestNeighbor because cv2 cannot be used in the browser. It appears that cv2 and tf.resizeNearestNeighbor work in similar ways.
 
-9. If images need to be normalized or require other pre-processing try to do this inside the model using a lamda layer. This means that you will not need to write separate tensorflow.js code in the app to do normalization of user submitted images.
 
 
 
