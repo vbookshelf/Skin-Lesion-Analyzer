@@ -37,7 +37,7 @@ These are the steps:
 1. Set up an account with an internet service provider (ISP). I use <a href="https://www.dreamhost.com/r.cgi?2163352">Dreamhost</a> but there are many others you can use depending on your needs and budget.
 2. Register a domain name like mywebsite.com. There is an annual cost for this but some ISP’s will give you your first domain for free.
 3. You can upload the files to this domain or you could create a sub-domain like: skinproject.mywebsite.com. The good thing about sub-domains is that they can be set up for free, depending on your ISP. This helps if you have many personal web project ideas that you want to implement. On this project, skin.test.woza.work is actually a subdomain of woza.work.
-5. Upload the files to the web address you have created. Your ISP will have specific instructions on how to do this. For example, on Dreamhost the HTML file of the main page has to always be named index.html. These are the files and folders from this repo that you should upload to your site:<br>
+4. Upload the files to the web address you have created. Your ISP will have specific instructions on how to do this. For example, on Dreamhost the HTML file of the main page has to always be named index.html. These are the files and folders from this repo that you should upload to your site:<br>
 
 - index.html<br>
 - assets (folder)<br>
@@ -45,7 +45,14 @@ These are the steps:
 - final_model_kaggle_version1 (folder)<br>
 - robotfavicon.png (Stored in assets folder. Not essential.)<br>
 
-5. After you have finished uploading the files and folders type your website address in your browser and go to your site. It should look and work just like mine does. I must be honest, the first time you set up a website can sometimes be a frustrating process. But persevere because it always works in the end - after some hair pulling and a few tears.
+5. In the predict.js file there are web addresses that are part of the code. In order to load the model you will need to change these addresses to match the domain address that you are using.
+
+```
+model = await tf.loadModel('http://skin.test.woza.work/model_kaggle_version12/model.json');
+$("#selected-image").attr("src", "http://skin.test.woza.work/assets/samplepic.jpg")
+```
+
+6. After you have finished uploading the files and folders type your website address in your browser and go to your site. It should look and work just like mine does. I must be honest, the first time you set up a website can sometimes be a frustrating process. But persevere because it always works in the end - after some hair pulling and a few tears.
 
 
 Please take note that if you add a security certificate to your website to make it an https site,  this security feature may block the model from automatically downloading when a user visits your website. 
