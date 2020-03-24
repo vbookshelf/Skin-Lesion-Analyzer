@@ -8,14 +8,6 @@
 <meta name="description" content="Use the power of Machine Learning to diagnose Skin Lesions.">
 
 
-<!--Code to prevent the browser from caching the page-->
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-<meta http-equiv="Pragma" content="no-cache"/>
-<meta http-equiv="Expires" content="0"/>
-
-
-
-
 
 <!--CSS Stylesheets-->
 <link rel="stylesheet" href="css/w3.css">
@@ -24,86 +16,115 @@
 <!--Link to Font Awesome icons-->
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css' integrity='sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns' crossorigin='anonymous'>
 
+
+
 <!--Link to fonts from google fonts-->
 <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 
 <link rel="shortcut icon" type="image/png" href="robotfavicon.png">
 
 
-
-
 <style>
-html,body,h2,h3,h4 {font-family: Helvetica, sans-serif}
+html,body,h2,h3,h4,p,h5,li {font-family: Roboto, sans-serif}
 </style>
 
 
 </head>
 
 
-<body class="w3-pale-blue">
+
+
+<body class="bground-color">
 
 
 
 <!-- w3-content defines a container for fixed size centered content,
 and is wrapped around the whole page content. -->
-<div class="w3-content card" style="max-width:960px">
+<div class="w3-content" style="max-width:960px">
 
 
 
-<!-- 1. HOME PAGE TAB -->
+<!-- 1. HOME PAGE -->
 <div class="tabbed w3-animate-opacity w3-white" id="home">
-
-
-
-<!-- Header -->
-<div class="w3-center title adjust-fontcolor logo">
 	
-  <h1 class="space-letters w3-text-purple"><i class="fa fa-plus-square w3-padding" style="font-size:40px;color:red"></i><b>Skin Lesion Analyzer</b></h1>
-  <h5 class="space-letters tag-font w3-text-red"><b>powered by<br> Artificial Intelligence</b></h5>
+	
+<!-- Top Bar -->
+<div class='w3-center'>
+	
+	<p class="space-letters-large w3-small w3-tag bground-color w3-text-teal w3-border w3-round">
+		<a class="change-size" href="faq.html"><b>About</b></a>
 </div>
 
 
 
+
+	
 
 <!-- Front page image -->
 <!-- This image will be replaced once the js code runs. -->
-<div class="w3-center">
-	<img id="selected-image" class="w3-round adjust-image" src="assets/samplepic.jpg" alt=""> 
+<div class="w3-center w3-padding-bottom">
+	
+
+	<img id="selected-image" class="w3-round adjust-image" src="assets/samplepic.jpg" height="250" alt="Image for analysis"> 
+	
 </div> 
 
 
-<div class="w3-center">
-	<div class="progress-bar">Ai is Loading...</div>
-</div>
-
-
-<div class="w3-center add-padding w3-border add-margin side-margin w3-round w3-pale-blue">
-		
-	<h5 class='new-font'>Results</h5>
-	<ol class='w3-left-align' id='prediction-list'></ol>
-		
-</div>
 
 
 <!-- Button -->
-<div id="btnn" class="w3-center bottom-padding">
+<div id="btnn" class="w3-center">
 	
-	<button class="w3-btn w3-purple w3-round w3-margin-bottom adjust-spacing w3-hover-red btn-font w3-padding w3-space-letters w3-card-4" onclick="setTimeout(simulateClick.bind(null, 'image-selector'), 200)"><i class='fas fa-camera w3-padding-right' style='font-size:15px'></i><b>Submit an Image</b></button>
+	<button class="w3-btn w3-deep-orange w3-hover-blue w3-round w3-margin-bottom adjust-spacing btn-font w3-padding w3-space-letters w3-text-white" onclick="setTimeout(simulateClick.bind(null, 'image-selector'), 200)"><i class='fas fa-camera w3-padding-right' style='font-size:15px'></i>
+		<b>Skin Lesion Analyzer</b></button>
+	<!--<p class="w3-text-teal">jpeg or png</p>-->
 </div> 
 
 
 
+<div class="w3-center">
+	<div  class="progress-bar w3-text-teal space-letters">
+	<i class="fa fa-spinner fa-spin" style="font-size:24px"></i>
+	<p>Model is loading...</p></div>
+</div>
 
-
-
-
-<div class='w3-padding'>
-	<p class='w3-round w3-margin w3-margin-bottom w3-text-purple'>Please Note: This is a prototype.</p>
+<!-- Progress Bar 
+Just here for graphics.
+The functionality was not implemented because it slows down the model download 
+and causes it to fail.-->
+<div class="w3-light-grey side-margin w3-opacity">
+<div  id="myBar" class="w3-container w3-blue" style="height:5px;width:100%"></div>
 </div>
 
 
-</div><!--END OF HOME PAGE TAB-->
+<!-- Results Box -->
+<div class="w3-center w3-border add-margin side-margin w3-round w3-sand
+text-color space-letters bottom-margin dont-break-out">
+
+	<p>Results</p>
+	
+	<!-- Remember that an ordered or unordered list has tabs by default.
+	CSS is not styling the prediction outputs. The tabs you see are the default
+	tabs associated with lists.-->
+	<ol class='w3-left-align text-color' id='prediction-list'></ol>
+		
+</div>
+
+
+
+
+<!-- Bottom Bar -->
+<div class='w3-center w3-padding-bottom'>
+	<p class="space-letters">
+		<a class="w3-small w3-hover-text-deep-orange text-color" href="https://woza.work/">
+		<b>woza.work</b></a>
+	</p>
+</div>
+
+
+</div><!--END OF HOME PAGE-->
 
 
 
@@ -113,7 +134,7 @@ and is wrapped around the whole page content. -->
 </div>
 
 <div class="hide">
-	<input id="image-selector" type="file">
+	<input id="image-selector" type="file" multiple>
 </div>
 <!--===================================-->
 
@@ -122,20 +143,21 @@ and is wrapped around the whole page content. -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 
 	</script>
-	<!-- Load TensorFlow.js -->
 	
+	
+	<!-- Load TensorFlow.js
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.6.0/dist/tf.min.js"> 
+	</script>-->
 	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.3/dist/tf.min.js"> 
 	</script>
 	
-	<!-- NOTE:
-	Change the predict.js file name (change the number) each time you modify the predict.js file.
-	This will force the browser to load the latest predict.js and not load
-	the predict.js file that is in the user's cache.
-	There is a stackoverflow soulution that says to add a version to the js file. 
-	But it could be that some browsers can ignore the version. Therefore I think
-	it's safer to change the js file name.-->
-	<script src="jscript/skin_classes.js"></script>
-	<script src="jscript/predict202.js"></script> 
+	
+	<!-- Load the js files -->
+	<script src="jscript/target_classes.js"></script>
+	<script src="jscript/app_startup_code.js"></script>
+	<script src="jscript/app_batch_prediction_code.js"></script>
+	
+	
 	
 	
 	

@@ -1,0 +1,241 @@
+.header-bground {
+	background-color: #191970;
+	
+}
+
+
+.topp-margin {
+	margin-top: 40px;
+}
+
+
+ul {
+	
+	padding: 15px;
+}
+
+
+  
+.space-letters {
+	letter-spacing: .05em;
+}
+
+
+.unblock {
+display: inline-block;
+}
+
+
+.dont-break-out {
+	/*These are technically the same but use both 
+	to ensure all browsers are supported*/
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.bground-color {
+	background-color: #F8F8F8; /* rgb(248,248,248) */
+}
+
+
+p {
+	font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.text-color {
+	color: #404040; /* rgb(64,64,64) */
+}
+
+
+.logo h1 {
+	font-size: 35px;
+	font-family: 'Oswald', Helvetica, sans-serif;
+	line-height: 1.1;
+}
+
+
+.logo1 {
+	font-size: 50px;
+	font-family: 'Oswald', Helvetica, sans-serif;
+	line-height: 1.1;
+	
+}
+
+.logo2 {
+	font-size: 30px;
+	font-family: 'Oswald', Helvetica, sans-serif;
+
+}
+
+
+
+
+a:hover { 
+  color: #ff9999; /* rgb(0, 255, 191) */
+}
+
+.test:hover {
+	color: #FF0000;
+	background-color: #FF0000;
+}
+
+
+
+
+li {
+	font-family: 'Roboto', Helvetica, sans-serif;
+	font-size: 13px;
+	padding-bottom: 15px;
+}
+
+.news-font {
+	font-size: 13px;
+}
+
+
+.no-margin {
+	margin: 0px;
+}
+
+
+
+.add-padding {
+	padding-bottom: 30px;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+
+
+.title {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.hide {
+	display: none;
+}
+
+
+
+
+.space-letters {
+	letter-spacing: .05em;
+}
+
+
+
+.unblock {
+	display: inline-block;
+}
+
+
+.dont-break-out {
+	/*These are technically the same but use both 
+	to ensure all browsers are supported*/
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+
+.side-margin1 {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+
+.bottom-margin {
+	margin-bottom: 380px;
+}
+
+.topp-margin {
+	margin-top: 40px;
+}
+
+
+
+.set-height {
+	height: 70px;
+}
+
+
+
+.normal-bar {
+	display: block;
+}
+
+
+.mobile-bar {
+	display: none;
+}
+
+
+
+
+
+/*
+-----------------
+MEDIA QUERIES
+-----------------
+*/
+
+@media only screen and (min-device-width: 1200px) {
+/* Devices that are Laptops and Desktops */
+
+
+
+
+}/*Close Media Query*/
+
+
+@media only screen and (max-width: 480px) and (orientation: portrait){
+/*Cellphone Screens in portrait*/
+
+.side-margin1 {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+.normal-bar {
+	display: none;
+}
+
+
+.mobile-bar {
+	display: block;
+}
+
+
+
+
+
+
+} /*Close Media Query*/
+
+@media only screen and (max-width: 480px) and (orientation: landscape){
+/*Cellphone Screens in portrait*/
+
+.side-margin1 {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+.normal-bar {
+	display: none;
+}
+
+
+.mobile-bar {
+	display: block;
+}
+
+
+} /*Close Media Query*/
+
+
+

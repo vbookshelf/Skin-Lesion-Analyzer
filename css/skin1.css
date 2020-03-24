@@ -1,48 +1,11 @@
 
-.bground-color {
-	background-color: #F8F8F8; /* #1B2A49;  #1B2A49; #F8F8F8;  rgb(248,248,248) */
-}
 
-.text-color {
-	color: #404040;  /*rgb(64,64,64) */
-}
-
-.top-font {
-	font-size: 18px;
-	letter-spacing: .07em;
-	
-}
-
-.info-font {
-	font-size: 16px;
-}
-
-.fname-font {
-	font-size: 14px;
-}
-
-
-
-.topp-padding {
-	padding-top: 30px;
-}
-
-
-
-li {
-	font-family: 'Roboto', serif;
-	font-size: 14px;
-}
-
-a:hover { 
-  color: #FF0000;
-}
 
 
 
 .add-margin {
 	margin-bottom: 30px;
-	margin-top: 5px;
+	margin-top: 20px;
 }
 
 
@@ -78,10 +41,6 @@ input {
 	letter-spacing: .05em;
 }
 
-.space-letters-large {
-	letter-spacing: .1em;
-}
-
 
 .space-letters {
 	letter-spacing: .05em;
@@ -115,6 +74,11 @@ input[type="file"] {
 	
 }
 
+li {
+	font-family: monospace, serif;
+	font-size: 15px;
+	
+}
 
 
 
@@ -147,7 +111,7 @@ input[type="file"] {
 
 .btn-font {
 	font-size: 18px;
-	letter-spacing: .05em;
+	letter-spacing: .03em;
 }
 
 /*
@@ -166,6 +130,10 @@ Specifically for tablets
 	font-size: 16px;
 }
 
+li {
+	font-family: monospace, serif;
+	font-size: 16px;
+}
 
 
 .side-margin {
@@ -182,10 +150,6 @@ Specifically for tablets
 	padding-bottom: 300px;
 }
 
-.bottom-margin {
-	margin-bottom: 300px;
-}
-
 
 /*
 -----------------
@@ -197,6 +161,7 @@ MEDIA QUERIES
 /* Devices that are Laptops and Desktops */
 
 
+/*Adjust homepage font properties*/
 
 .btn-font {
 	font-size: 15px;
@@ -208,7 +173,10 @@ MEDIA QUERIES
 	font-size: 15px;
 }
 
-
+li {
+	font-family: monospace, serif;
+	font-size: 15px;
+}
 
 .side-margin {
 	margin-left: 30%;
@@ -223,7 +191,7 @@ input {
 
 
 .logo h1 {
-	font-size: 35px;
+	font-size: 40px;
 }
 
 .adjust-image {
@@ -287,7 +255,7 @@ input {
 /*Cellphone Screens in portrait*/
 
 .btn-font {
-	font-size: 18px;
+	font-size: 12px;
 	letter-spacing: .03em;
 }
 
@@ -302,7 +270,7 @@ input {
 
 .adjust-image {
 	max-width: 90%;
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 }
 
 .space-letters {
@@ -310,7 +278,7 @@ input {
 }
 
 .logo h1 {
-	font-size: 35px;
+	font-size: 30px;
 }
 
 .bottom-padding {
@@ -327,6 +295,10 @@ input {
 	
 }
 
+li {
+	font-family: monospace, serif;
+	font-size: 12px;
+}
 
 .tag-font {
 	font-size: 10px;
@@ -336,25 +308,6 @@ input {
 	padding-bottom: 30px;
 	padding-left: 2px;
 	padding-right: 2px;
-}
-
-
-.mob-font {
-	font-size: 16px;
-	
-}
-
-.mob-font1 {
-	font-size: 18px;
-	
-}
-
-li, ol {
-	font-size: 18px;
-}
-
-.fname-font {
-	font-size: 16px;
 }
 
 
@@ -408,6 +361,10 @@ li, ol {
 	
 }
 
+li {
+	font-family: monospace, serif;
+	font-size: 10px;
+}
 
 .add-padding {
 	padding-bottom: 30px;
@@ -438,6 +395,16 @@ li, ol {
 @media only all and (max-width: 520px) and (orientation: landscape) {
 /*Tablets in landscape*/
 
+.new-font {
+	font-family: monospace, serif;
+	font-size: 15px;
+	
+}
+
+li {
+	font-family: monospace, serif;
+	font-size: 15px;
+}
 
 
 
