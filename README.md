@@ -5,7 +5,7 @@ Live Web App: http://skin.test.woza.work/
 
 <br>
 
-<img src="http://skin.test.woza.work/assets/skin_sample.png" width="350"></img>
+<img src="http://skin.test.woza.work/assets/app_pic.png" width="350"></img>
 
 <br>
 
