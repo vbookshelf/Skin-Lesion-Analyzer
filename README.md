@@ -81,6 +81,8 @@ Then upload the model to the server again.
 
 8. There are slight differences in the predicted probabilities when images are submitted via pc and via mobile phone. This appears to indicate that the mobile browser may be somehow modifying the image before it gets submitted to the model for prediction.
 
+9. From Tensorflow.js version 1.0.0 and beyond it's possible to add a progress bar by using onProgress. The progress bar gives the user a nice visual cue during model download. Also, when a user returns to the app later, a full progress bar tells the user that a cached model is instantly available so he/she won't need to wait for download. The downside is that when a progress bar is added the model download becomes unreliable if the internet connection is slow. In fact model download regularly fails. It could be that I've just implemented the progress bar functionality badly. When there's no progress bar I found that even when the connection was slow the model downloads slowly but successfully. This web app has a progress bar implemented: http://apple.test.woza.work/
+
 
 
 
