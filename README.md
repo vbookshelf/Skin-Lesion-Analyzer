@@ -40,12 +40,13 @@ These are the steps:
 4. Upload the files to the web address you have created. Your ISP will have specific instructions on how to do this. For example, on Dreamhost the HTML file of the main page has to always be named index.html. These are the files and folders from this repo that you should upload to your site:<br>
 
 - index.html<br>
+- faq.html<br>
 - assets (folder)<br>
 - jscript (folder)<br>
 - final_model_kaggle_version1 (folder)<br>
 - robotfavicon.png (Stored in assets folder. Not essential.)<br>
 
-5. In the predict.js file there are web addresses that are part of the code. In order to load the model you will need to change these addresses to match the domain address that you are using.
+5. In the app_startup_code.js file there are web addresses that are part of the code. In order to load the model you will need to change these addresses to match the domain address that you are using.
 
 ```
 model = await tf.loadModel('http://skin.test.woza.work/model_kaggle_version12/model.json');
